@@ -9,12 +9,46 @@
 // }
 
 import React from "react";
+import Footer from "./components/layouts/footer/Footer";
 
 const Home = () => {
   return (
     <div className="font-sans">
       {/* Encabezado */}
-      <header className="bg-blue-600 text-white text-center py-16">
+      <header className="bg-blue-600 text-white py-8">
+        <div className="container mx-auto flex items-center justify-between px-4">
+          {/* Logo */}
+          <p className="text-3xl font-bold">LOGO</p>
+
+          {/* Botón de contacto */}
+          <a
+            href="#contacto"
+            className="bg-white text-blue-600 py-2 px-4 rounded-md shadow-md hover:bg-gray-100"
+          >
+            Contáctanos
+          </a>
+        </div>
+
+        {/* Contenido centralizado */}
+        <div className="text-center mt-8 px-4">
+          <h1 className="text-4xl font-bold mb-4">
+            Impulsa tu negocio con nuestros servicios de marketing digital
+          </h1>
+          <p className="text-lg mb-6">
+            Generamos estrategias personalizadas para llevar tu empresa al
+            siguiente nivel.
+          </p>
+          <a
+            href="#contacto"
+            className="bg-white text-blue-600 py-2 px-4 rounded-md shadow-md hover:bg-gray-100"
+          >
+            Conoce más
+          </a>
+        </div>
+      </header>
+
+      {/* <header className="bg-blue-600 text-white text-center py-16">
+        <p className="text-4xl font-bold mb-4">LOGO</p>
         <h1 className="text-4xl font-bold mb-4">
           Impulsa tu negocio con nuestros servicios de marketing digital
         </h1>
@@ -28,7 +62,7 @@ const Home = () => {
         >
           Contáctanos
         </a>
-      </header>
+      </header> */}
 
       {/* Sección de Servicios */}
       <section className="py-16 px-4 bg-gray-100">
@@ -166,6 +200,9 @@ const Home = () => {
           </button>
         </form>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
