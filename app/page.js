@@ -10,6 +10,7 @@
 
 import React from "react";
 import Footer from "./components/layouts/footer/Footer";
+import MyBarChart from "./components/common/Charts/BarChart";
 
 const Home = () => {
   return (
@@ -203,6 +204,7 @@ const Home = () => {
 
       {/* Footer */}
       <Footer />
+      <MyBarChart />
     </div>
   );
 };
